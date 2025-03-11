@@ -9,7 +9,7 @@ cmake_minimum_required (VERSION 3.25)
 add_library (tutorials_lib STATIC fastq_conversion.cpp)
 target_include_directories (tutorials_lib PUBLIC "${tutorials_SOURCE_DIR}/include")
 target_link_libraries (tutorials_lib PUBLIC seqan3::seqan3 sharg::sharg seqan::hibf
-                                                    fmindex-collection::fmindex-collection
+                                            fmindex-collection::fmindex-collection
 )
 
 target_compile_options (tutorials_lib PUBLIC "-pedantic" "-Wall" "-Wextra")
